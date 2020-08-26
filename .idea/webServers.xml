@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8c3ae22c-9762-4a3f-ae0d-4ccd57a65ba9" name="bigdata-cdh01">
+        <fileTransfer accessType="SFTP" host="bigdata-cdh01" port="22" sshConfigId="ac6f447e-109a-45a0-85da-b176b2ff7483" sshConfig="root@bigdata-cdh01:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
