@@ -106,11 +106,11 @@ object SyncMySQLToHBase {
 		
 		// 同步MySQL的tbl_users表数据到HBase的tbl_users表中
 		//syncTable(spark, dbTables(0), hbaseTables(0), family, "id");
-		//syncTable(spark, "tbl_users", "tbl_tag_users", family, "id");
+		syncTable(spark, "tbl_profile_users", "tbl_profile_users", family, "id");
 		
 		// 同步MySQL的tbl_orders表数据到HBase的tbl_orders表中
 		//syncTable(spark, dbTables(1), hbaseTables(1), family, "id");
-		syncTable(spark, "tbl_tag_orders", "tbl_tag_orders", family, "id");
+//		syncTable(spark, "tbl_tag_orders", "tbl_tag_orders", family, "id");
 		
 		// 同步MySQL的tbl_goods表数据到HBase的tbl_goods表中
 		//syncTable(spark, dbTables(2), hbaseTables(2), family, "id");

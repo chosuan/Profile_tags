@@ -66,6 +66,7 @@ abstract class AbstractModel(modelName: String, modelType: ModelType) extends Lo
                 .option("hbaseTable", hbaseMeta.hbaseTable)
                 .option("family", hbaseMeta.family)
                 .option("selectFields", hbaseMeta.selectFieldNames)
+                .option("filterConditions", hbaseMeta.filterConditions)
                 .load()
         } else {
             // 如果未获取到数据，直接抛出异常
@@ -112,7 +113,7 @@ abstract class AbstractModel(modelName: String, modelType: ModelType) extends Lo
             //modelDF.show()
 
             // e. 合并标签与保存
-            mergeAndSaveTag(modelDF)
+//            mergeAndSaveTag(modelDF)
 
             tagDF.unpersist()
         } catch {
